@@ -11,11 +11,11 @@
                 <Grid x:Name="grid" Opacity="0">
                     <Border x:Name="PART_Border1" CornerRadius="3,3,3,3">
                         <Border.Background>
-                            <SolidColorBrush x:Name="color" Color="#a7abb0" />
+                            <SolidColorBrush x:Name="color" Color="#a7abb0"/>
                         </Border.Background>
                     </Border>
                     <Border x:Name="PART_Border2" Background="White" CornerRadius="2,2,2,2" Margin="1,1,1,1">
-                        <dx:DXContentPresenter Width="Auto" Height="Auto" Content="{Binding Path=Content, RelativeSource={RelativeSource TemplatedParent}}" />
+                        <dx:DXContentPresenter Width="Auto" Height="Auto" Content="{Binding Path=Content, RelativeSource={RelativeSource TemplatedParent}}"/>
                     </Border>
                     <Grid.Effect>
                         <DropShadowEffect BlurRadius="3" RenderingBias="Performance" ShadowDepth="2" Opacity="0.2" />
@@ -26,16 +26,16 @@
                         <DataTrigger.EnterActions>
                             <BeginStoryboard>
                                 <Storyboard>
-                                    <ColorAnimation Storyboard.TargetName="color" Storyboard.TargetProperty="Color" Duration="0:0:0.5" BeginTime="0:0:0.5" To="Red" />
-                                    <DoubleAnimation Storyboard.TargetName="grid" Storyboard.TargetProperty="Opacity" Duration="0:0:0.5" To="1" />
+                                    <ColorAnimation Storyboard.TargetName="color" Storyboard.TargetProperty="Color" Duration="0:0:0.5" BeginTime="0:0:0.5" To="Red"/>
+                                    <DoubleAnimation Storyboard.TargetName="grid" Storyboard.TargetProperty="Opacity" Duration="0:0:0.5" To="1"/>
                                 </Storyboard>
                             </BeginStoryboard>
                         </DataTrigger.EnterActions>
                         <DataTrigger.ExitActions>
                             <BeginStoryboard>
                                 <Storyboard>
-                                    <ColorAnimation Storyboard.TargetName="color" Storyboard.TargetProperty="Color" Duration="0:0:0.0" To="#a7abb0" />
-                                    <DoubleAnimation Storyboard.TargetName="grid" Storyboard.TargetProperty="Opacity" Duration="0:0:0.0" To="0" />
+                                    <ColorAnimation Storyboard.TargetName="color" Storyboard.TargetProperty="Color" Duration="0:0:0.0" To="#a7abb0"/>
+                                    <DoubleAnimation Storyboard.TargetName="grid" Storyboard.TargetProperty="Opacity" Duration="0:0:0.0" To="0"/>
                                 </Storyboard>
                             </BeginStoryboard>
                         </DataTrigger.ExitActions>
@@ -45,23 +45,23 @@
         </Grid.Resources>
         <dxb:BarManager>
             <dxb:BarManager.Items>
-                <dxb:BarButtonItem Name="bt1" Content="New" />
-                <dxb:BarButtonItem Name="bt2" Content="Open" />
-                <dxb:BarButtonItem Name="bt3" Content="Save" />
-                <dxb:BarButtonItem Name="bt4" Content="Close" />
+                <dxb:BarButtonItem Name="bt1" Content="New"/>
+                <dxb:BarButtonItem Name="bt2" Content="Open"/>
+                <dxb:BarButtonItem Name="bt3" Content="Save"/>
+                <dxb:BarButtonItem Name="bt4" Content="Close"/>
                 <dxb:BarSubItem Name="sb" Content="File">
                     <dxb:BarSubItem.ItemLinks>
-                        <dxb:BarButtonItemLink BarItemName="bt1" />
-                        <dxb:BarButtonItemLink BarItemName="bt2" />
-                        <dxb:BarButtonItemLink BarItemName="bt3" />
-                        <dxb:BarButtonItemLink BarItemName="bt4" />
+                        <dxb:BarButtonItemLink BarItemName="bt1"/>
+                        <dxb:BarButtonItemLink BarItemName="bt2"/>
+                        <dxb:BarButtonItemLink BarItemName="bt3"/>
+                        <dxb:BarButtonItemLink BarItemName="bt4"/>
                     </dxb:BarSubItem.ItemLinks>
                 </dxb:BarSubItem>
             </dxb:BarManager.Items>
             <dxb:BarManager.Bars>
                 <dxb:Bar Caption="Standard">
                     <dxb:Bar.ItemLinks>
-                        <dxb:BarSubItemLink BarItemName="sb" />
+                        <dxb:BarSubItemLink BarItemName="sb"/>
                     </dxb:Bar.ItemLinks>
                 </dxb:Bar>
             </dxb:BarManager.Bars>
